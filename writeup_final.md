@@ -1,3 +1,5 @@
+#**Vehicle Detection Project**
+
 ---
 
 **Vehicle Detection Project**
@@ -153,7 +155,7 @@ The pipeline shows poor detection for white cars. Also the detection of small ca
 
 I would try the following to make my pipeline more rigid:
 * The classifier is likely to fail when there are shadows. Explore more color spaces. Try out single channels.
-* Augment the data to increase the training set.
+* Augment the data to increase the training set. Include some examples of darker non car images.
 * Keep history of car detection and use those locations to do a localized search in the next frame.
 * To further eliminate false positives, flag an area as a car only if it has been successfully detected on 5 consecutive frames.
 * Optimize the sliding window to reduce the areas searched in the frame. This will improve the throughput. 
